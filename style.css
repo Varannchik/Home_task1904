@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.content .top {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 400px;
+  height: 149px;
+  border: 1px solid black;
+  -webkit-transform: perspective(75px) rotateX(-20deg);
+          transform: perspective(75px) rotateX(-20deg);
+}
+
+.content .bottom {
+  position: absolute;
+  bottom: -55px;
+  right: 48px;
+  width: 400px;
+  height: 155px;
+  border: 1px solid black;
+  -webkit-transform: perspective(75px) rotateX(20deg);
+          transform: perspective(75px) rotateX(20deg);
+}
+
+.content .left {
+  position: absolute;
+  top: 200px;
+  left: -150px;
+  width: 400px;
+  height: 149px;
+  border: 1px solid black;
+  -webkit-transform: perspective(71px) rotateZ(-90deg) rotateX(-20deg);
+          transform: perspective(71px) rotateZ(-90deg) rotateX(-20deg);
+}
+
+.content .right {
+  position: absolute;
+  top: 200px;
+  right: -154px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid black;
+  -webkit-transform: perspective(71px) rotateZ(90deg) rotateX(-20deg);
+          transform: perspective(71px) rotateZ(90deg) rotateX(-20deg);
+}
+
+.content .table {
+  width: 150px;
+  height: 49px;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  border: none;
+  -webkit-transform: skew(-40deg);
+          transform: skew(-40deg);
+  background: lightseagreen;
+}
+
+.content .table .leg {
+  height: 100px;
+  width: 3px;
+  background: blue;
+  -webkit-transform: skew(40deg);
+          transform: skew(40deg);
+  position: absolute;
+}
+
+.content .table .leg1 {
+  left: 50px;
+  top: 5px;
+}
+
+.content .table .leg2 {
+  right: -30px;
+  top: 5px;
+}
+
+.content .table .leg3 {
+  bottom: -91px;
+  left: 50px;
+}
+
+.content .table .leg4 {
+  bottom: -91px;
+  right: -30px;
+}
+/*# sourceMappingURL=style.css.map */

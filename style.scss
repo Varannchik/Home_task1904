@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    
+    .top{
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 400px;
+        height: 149px;     
+        border: 1px solid black;       
+        transform: perspective(75px) rotateX(-20deg);       
+    }
+    .bottom{
+        position: absolute;
+        bottom: -55px;
+        right: 48px;
+        width: 400px;
+        height: 155px;
+        border: 1px solid black;       
+        transform: perspective(75px) rotateX(20deg);   
+    }
+    .left{
+        position: absolute;
+        top: 200px;
+        left: -150px;
+        width: 400px;
+        height: 149px;        
+        border: 1px solid black;    
+        transform: perspective(71px) rotateZ(-90deg) rotateX(-20deg) ;
+    }
+    .right{
+        position: absolute;
+        top: 200px;
+        right: -154px;
+        width: 400px;
+        height: 150px;
+        border: 1px solid black;   
+        transform: perspective(71px) rotateZ(90deg) rotateX(-20deg);
+    }
+    .table{       
+        width: 150px;
+        height: 49px;
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        border: none;
+        transform: skew(-40deg);
+        background: lightseagreen;
+        .leg{
+            height: 100px;
+            width: 3px;
+            background:blue;
+            transform: skew(40deg);
+            position: absolute;
+        }
+        .leg1{
+            left: 50px;
+            top: 5px;
+        }
+        .leg2{
+            right: -30px;
+            top: 5px;
+        }
+        .leg3{
+            bottom: -91px;
+            left: 50px;
+        }
+        .leg4{
+            bottom: -91px;
+            right: -30px;
+        }
+
+    }
+   
+    
+}
